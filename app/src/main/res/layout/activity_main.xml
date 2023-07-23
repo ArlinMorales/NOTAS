@@ -90,7 +90,7 @@
                 android:id="@+id/button2"
                 android:layout_width="129dp"
                 android:layout_height="wrap_content"
-                android:text="1° Periodo"
+                android:text="1 Periodo"
                 android:textColorHighlight="#3F58E4"
                 android:textColorLink="#3F51B5" />
 
@@ -98,13 +98,13 @@
                 android:id="@+id/button3"
                 android:layout_width="129dp"
                 android:layout_height="wrap_content"
-                android:text="2° Periodo" />
+                android:text="2 Periodo" />
 
             <Button
                 android:id="@+id/button4"
                 android:layout_width="128dp"
                 android:layout_height="match_parent"
-                android:text="3° Periodo" />
+                android:text="3 Periodo" />
         </TableRow>
 
     </TableLayout>
@@ -172,7 +172,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="2dp"
                     android:layout_marginBottom="8dp"
-                    android:text="4.8"
+                    android:text="4"
                     android:textColor="#797D81"
                     android:textSize="22dp"
                     android:textStyle="bold"
@@ -236,7 +236,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="2dp"
                     android:layout_marginBottom="8dp"
-                    android:text="3.5"
+                    android:text="3"
                     android:textColor="#797D81"
                     android:textSize="22dp"
                     android:textStyle="bold"
@@ -298,7 +298,7 @@
                     android:textStyle="bold"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.731"
+                    app:layout_constraintHorizontal_bias="0.772"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/tcourse_name" />
 
@@ -405,7 +405,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="2dp"
                     android:layout_marginBottom="8dp"
-                    android:text="3.8"
+                    android:text="3"
                     android:textColor="#797D81"
                     android:textSize="22dp"
                     android:textStyle="bold"
@@ -460,13 +460,13 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="2dp"
                     android:layout_marginBottom="8dp"
-                    android:text="4.5"
+                    android:text="4"
                     android:textColor="#797D81"
                     android:textSize="22dp"
                     android:textStyle="bold"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.873"
+                    app:layout_constraintHorizontal_bias="0.8"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/tcourse_name" />
 
