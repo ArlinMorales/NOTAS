@@ -14,12 +14,13 @@
         android:layout_marginTop="144dp"
         android:text="Mis calificaciones"
         android:textAlignment="gravity"
-        android:textSize="20dp"
+        android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.151"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="HardcodedText" />
 
     <ImageButton
         android:id="@+id/imageButton"
@@ -30,7 +31,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.054"
-        app:srcCompat="@android:drawable/ic_menu_set_as" />
+        app:srcCompat="@android:drawable/ic_menu_set_as"
+        android:importantForAccessibility="no" />
 
     <ImageView
         android:id="@+id/imageView2"
@@ -41,7 +43,9 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:srcCompat="@tools:sample/avatars" />
+        tools:srcCompat="@tools:sample/avatars"
+        android:contentDescription="@string/TODO"
+        tools:ignore="ContentDescription" />
 
     <TextView
         android:id="@+id/textView3"
@@ -49,21 +53,23 @@
         android:layout_height="34dp"
         android:text="Arlin"
         android:textColorHighlight="#3F51B5"
-        android:textSize="20"
+        android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.175"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.073" />
+        app:layout_constraintVertical_bias="0.073"
+        tools:ignore="HardcodedText" />
 
     <TableLayout
         android:layout_width="393dp"
         android:layout_height="93dp"
         android:background="#BCC5F8"
         tools:layout_editor_absoluteX="10dp"
-        tools:layout_editor_absoluteY="211dp">
+        tools:layout_editor_absoluteY="211dp"
+        tools:ignore="MissingConstraints">
 
         <TableRow
             android:layout_width="match_parent"
@@ -71,15 +77,17 @@
             android:backgroundTint="#3F51B5" >
 
             <EditText
-                android:id="@+id/editTextText3"
-                android:layout_width="100dp"
+                android:id="@+id/editTextText4"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_span="3"
-                android:gravity="center"
                 android:ems="10"
                 android:inputType="text"
+                android:gravity="center"
                 android:text="Periodo"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
         </TableRow>
 
         <TableRow
@@ -87,24 +95,22 @@
             android:layout_height="match_parent">
 
             <Button
-                android:id="@+id/button2"
-                android:layout_width="129dp"
+                android:id="@+id/button5"
+                android:layout_width="130dp"
                 android:layout_height="wrap_content"
-                android:text="1 Periodo"
-                android:textColorHighlight="#3F58E4"
-                android:textColorLink="#3F51B5" />
+                android:text="@string/_1_periodo" />
 
             <Button
-                android:id="@+id/button3"
-                android:layout_width="129dp"
+                android:id="@+id/button6"
+                android:layout_width="130dp"
                 android:layout_height="wrap_content"
-                android:text="2 Periodo" />
+                android:text="@string/_2_periodo" />
 
             <Button
-                android:id="@+id/button4"
-                android:layout_width="128dp"
-                android:layout_height="match_parent"
-                android:text="3 Periodo" />
+                android:id="@+id/button7"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:text="@string/_3_periodo" />
         </TableRow>
 
     </TableLayout>
@@ -124,17 +130,18 @@
         android:layout_height="1dp"
         android:background="?android:attr/listDivider"
         tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="325dp" />
+        tools:layout_editor_absoluteY="325dp"
+        tools:ignore="MissingConstraints" /><![CDATA[
 
-    <EditText
+    ]]><EditText
         android:id="@+id/editTextText2"
         android:layout_width="134dp"
         android:layout_height="45dp"
         android:ems="10"
         android:gravity="center_horizontal"
         android:inputType="text"
-        android:text="Materias"
-        android:textSize="20dp"
+        android:text="@string/materias"
+        android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -164,7 +171,8 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_bias="0.596"
-                tools:background="#CBCDDA">
+                tools:background="#CBCDDA"
+                tools:ignore="DuplicateIds">
 
                 <TextView
                     android:id="@+id/markNumber2"
@@ -172,9 +180,9 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="2dp"
                     android:layout_marginBottom="8dp"
-                    android:text="4"
+                    android:text="@string/_4_3"
                     android:textColor="#797D81"
-                    android:textSize="22dp"
+                    android:textSize="22sp"
                     android:textStyle="bold"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -187,7 +195,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="4dp"
-                    android:text="Matemáticas"
+                    android:text="@string/matem_ticas"
                     android:textColor="#1587FE"
                     android:textSize="16sp"
                     android:textStyle="bold"
@@ -223,7 +231,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="12dp"
-                    android:text="Ciencias"
+                    android:text="@string/ciencias"
                     android:textColor="#1587FE"
                     android:textSize="16sp"
                     android:textStyle="bold"
@@ -236,9 +244,9 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="2dp"
                     android:layout_marginBottom="8dp"
-                    android:text="3"
+                    android:text="@string/_3_5"
                     android:textColor="#797D81"
-                    android:textSize="22dp"
+                    android:textSize="22sp"
                     android:textStyle="bold"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -292,9 +300,9 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="2dp"
                     android:layout_marginBottom="8dp"
-                    android:text="4"
+                    android:text="@string/_4_2"
                     android:textColor="#797D81"
-                    android:textSize="22dp"
+                    android:textSize="22sp"
                     android:textStyle="bold"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -307,7 +315,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="16dp"
-                    android:text="Español"
+                    android:text="@string/espa_ol"
                     android:textColor="#1587FE"
                     android:textSize="16sp"
                     android:textStyle="bold"
@@ -343,22 +351,23 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="2dp"
                     android:layout_marginBottom="8dp"
-                    android:text="4"
+                    android:text="@string/_4_9"
                     android:textColor="#797D81"
-                    android:textSize="22dp"
+                    android:textSize="22sp"
                     android:textStyle="bold"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.786"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/tcourse_name" />
+                    app:layout_constraintTop_toBottomOf="@+id/tcourse_name"
+                    tools:ignore="HardcodedText" />
 
                 <TextView
                     android:id="@+id/tcourse_name2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="16dp"
-                    android:text="Ingles"
+                    android:text="@string/ingles"
                     android:textColor="#1587FE"
                     android:textSize="16sp"
                     android:textStyle="bold"
@@ -375,7 +384,8 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintVertical_bias="0.384"
-                    app:srcCompat="@mipmap/Ingles" />
+                    app:srcCompat="@mipmap/Ingles"
+                    android:contentDescription="@string/todo" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
         </TableRow>
@@ -405,9 +415,9 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="2dp"
                     android:layout_marginBottom="8dp"
-                    android:text="3"
+                    android:text="@string/_3"
                     android:textColor="#797D81"
-                    android:textSize="22dp"
+                    android:textSize="22sp"
                     android:textStyle="bold"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -420,7 +430,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="4dp"
-                    android:text="Naturales"
+                    android:text="@string/naturales"
                     android:textColor="#1587FE"
                     android:textSize="16sp"
                     android:textStyle="bold"
@@ -460,33 +470,37 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="2dp"
                     android:layout_marginBottom="8dp"
-                    android:text="4"
+                    android:text="@string/_4"
                     android:textColor="#797D81"
-                    android:textSize="22dp"
+                    android:textSize="22sp"
                     android:textStyle="bold"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.8"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/tcourse_name" />
+                    app:layout_constraintTop_toBottomOf="@+id/tcourse_name"
+                    tools:ignore="DuplicateIds,UnknownId" />
 
                 <TextView
                     android:id="@+id/tcourse_name2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="4dp"
-                    android:text="Edu. Fisica"
+                    android:text="@string/edu_fisica"
                     android:textColor="#1587FE"
                     android:textSize="16sp"
                     android:textStyle="bold"
                     app:layout_constraintEnd_toEndOf="parent"
-                    tools:layout_editor_absoluteY="7dp" />
+                    tools:layout_editor_absoluteY="7dp"
+                    tools:ignore="DuplicateIds" />
 
                 <ImageView
                     android:id="@+id/imageView9"
                     android:layout_width="77dp"
                     android:layout_height="67dp"
-                    app:srcCompat="@mipmap/EduF" />
+                    app:srcCompat="@mipmap/EduF"
+                    tools:ignore="MissingConstraints"
+                    android:contentDescription="TODO" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
         </TableRow>

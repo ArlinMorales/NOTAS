@@ -1,3 +1,21 @@
 <resources>
     <string name="app_name">NOTAS Y ASISTENCIA</string>
+    <string name="edu_fisica">Edu. Fisica</string>
+    <string name="_1_periodo">1 Periodo</string>
+    <string name="_2_periodo">2 Periodo</string>
+    <string name="_3_periodo">3 Periodo</string>
+    <string name="_4">4</string>
+    <string name="naturales">Naturales</string>
+    <string name="_3">3</string>
+    <string name="todo">todo</string>
+    <string name="ingles">Ingles</string>
+    <string name="espa_ol">Español</string>
+    <string name="ciencias">Ciencias</string>
+    <string name="matem_ticas">Matemáticas</string>
+    <string name="materias">Materias</string>
+    <string name="_4_2">4.2</string>
+    <string name="_3_5">3.5</string>
+    <string name="_4_3">4.3</string>
+    <string name="_4_9">4.9</string>
+    <string name="TODO">TODO</string>
 </resources>
